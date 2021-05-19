@@ -67,6 +67,7 @@
     <!-- End Header -->
 
     
+    
 
     
 
@@ -109,65 +110,19 @@
         </div>
         <!-- End Search Info -->
         <div class="row">
-          <div id="template">
-            
+          <div id="spaces">
           </div>
         </div>
 
         
 
-        <div class="row">
-          <div class="col-lg-4 g-mb-30">
-            <!-- Search Result -->
-            <article class="g-pa-25 u-shadow-v11 rounded">
-              <h2 class="h4 g-mb-15">
-                  <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#">Parking Space 1</a>
-                </h2>
+        
 
-              <!-- Search Info -->
-              <ul class="list-inline d-flex justify-content-between g-mb-20">
-                <li class="list-inline-item">
-                  <i class="icon-eye g-pos-rel g-top-1 g-color-gray-dark-v5 g-mr-5"></i> 722AQ53GY8
-                </li>
-                <li class="list-inline-item">
-                  <i class="icon-info g-pos-rel g-top-1 g-color-gray-dark-v5 g-mr-5"></i><span style="color:green;">PAID</span> 
-                </li>
-              </ul>
-              <!-- End Search Info -->
+        <div class="row" id="app_template">
+          <!-- <div id="app_template">
 
-              <p class="g-mb-15">
-                <i class="icon-clock g-pos-rel g-top-1 g-color-gray-dark-v5 g-mr-5"></i> 04:54:12 Tuesday 22 July, 2021
-              </p>
-
-            </article>
-            <!-- End Search Result -->
-          </div>
-          <div class="col-lg-4 g-mb-30">
-            <!-- Search Result -->
-            <article class="g-pa-25 u-shadow-v11 rounded">
-              <h2 class="h4 g-mb-15">
-                  <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#">Parking Space 3</a>
-                </h2>
-
-              <!-- Search Info -->
-              <ul class="list-inline d-flex justify-content-between g-mb-20">
-                <li class="list-inline-item">
-                  <i class="icon-eye g-pos-rel g-top-1 g-color-gray-dark-v5 g-mr-5"></i> UY894JIP3G
-                </li>
-                <li class="list-inline-item">
-                  <i class="icon-info g-pos-rel g-top-1 g-color-gray-dark-v5 g-mr-5"></i><span>UNSURE</span> 
-                </li>
-              </ul>
-              <!-- End Search Info -->
-
-              <p class="g-mb-15">
-                <i class="icon-clock g-pos-rel g-top-1 g-color-gray-dark-v5 g-mr-5"></i> 04:56:52 Tuesday 22 July, 2021
-              </p>
-
-              
-            </article>
-            <!-- End Search Result -->
-          </div>
+          </div> -->
+          
 
           
         </div>
@@ -249,8 +204,43 @@
 
 
   <!-- API calls js -->
+  <!-- <script>
+    
 
-  <script src="api.js"></script>
+// function to handle success
+function success() {
+    var data = JSON.parse(this.responseText); //parse the string to JSON
+    console.log(data);
+}
+
+// function to handle error
+function error(err) {
+    console.log('Request Failed', err); //error details will be in the "err" object
+}
+
+var xhr = new XMLHttpRequest(); //invoke a new instance of the XMLHttpRequest
+xhr.onload = success; // call success function if request is successful
+xhr.onerror = error;  // call error function if request failed
+xhr.open('GET', 'https://mawaqif.herokuapp.com/api/checks'); // open a GET request
+xhr.send(); // send the request to the server.
+  </script> -->
+
+
+<script>
+
+
+// function createNode(element) {
+//     return document.createElement(element);
+// }
+
+// function append(parent, el) {
+//   return parent.appendChild(el);
+// }
+
+// const ul = document.getElementById('spaces');
+
+</script>
+  <script src="assets/api2.js"></script>
 
   <!-- JS Global Compulsory -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
