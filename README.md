@@ -4,19 +4,19 @@ This is the Module of this project which provides an interface for the Parking S
 The Page which houses the User Interface is home.php.
 At every point in time, the current status of each parking space is kept updated with a number of information about the vehicle in it.
 Such information include:
-1. Occupied or Empty
+### 1. Occupied or Empty
    This is a status which informs on whether there is currently a vehicle in a specific parking space or not.
-2. Licence Plate Number
+### 2. Licence Plate Number
    This is the Licence Plate of the vehicle detected by the OCR software from Azure.
-3. Paid or Unpaid
+### 3. Paid or Unpaid
    This is a status which informs on whether or not a Vehicle whose licence plate has been detected in a particular parking Space has actually made payment for parking.
-4. Date and Time
+### 4. Date and Time
    This shows the exact time at which the last check on the Parking Space was carried out by the Robot.
    
  
  All of this Checks information is fetched from one of the endpoints of the API built for this project( https://mawaqif.herokuapp.com/api/checks ). This GET API call is made in assets/api2.js like this:
  
- 
+ ```
  function fetchdata(){
     fetch("https://mawaqif.herokuapp.com/api/checks")
     .then(response => {
@@ -41,18 +41,18 @@ Such information include:
 
 fetchdata();
 
-
+```
 
 As shown above, some of the information obtained from the endpoint https://mawaqif.herokuapp.com/api/checks include 
-1. is_empty
+### 1. is_empty
    This gives information on whether the Parking Space is Occupied or Empty. Occupied or Empty is then displayed on home.php
-2. plate_number
+### 2. plate_number
    This gives the plate number of the vehicle detected present in the parking space. Its value is set to empty is there is no vehicle there at a given time.\
-3. packing_space_id
+### 3. packing_space_id
    This piece of information identifies the exact parking space whose report is being displayed at    a given time. eg Parking Space "1"
-4. created_at
+### 4. created_at
    This shows the time at which the check was made. It also includes the date.
-5. paid_or_unpaid???
+###5. paid_or_unpaid???
 
 
 Below is a sample response when a GET request is made to the (https://mawaqif.herokuapp.com/api/checks) API:
