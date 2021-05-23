@@ -48,7 +48,7 @@ As shown above, some of the information obtained from the endpoint https://mawaq
 ### 1. is_empty
    This gives information on whether the Parking Space is Occupied or Empty. Occupied or Empty is then displayed on home.html
 ### 2. plate_number
-   This gives the plate number of the vehicle detected present in the parking space. Its value is set to empty is there is no vehicle there at a given time.\
+   This gives the plate number of the vehicle detected present in the parking space. Its value is set to empty is there is no vehicle there at a given time.
 ### 3. packing_space_id
    This piece of information identifies the exact parking space whose report is being displayed at    a given time. eg Parking Space "1"
 ### 4. created_at
@@ -66,4 +66,4 @@ Below is a sample response when a GET request is made to the (https://mawaqif.he
 
 </div>
 ```
-The __app_template__ element is a template container for each Parking Space being displayed. Hence, 5 parking spaces would have 5 app_template displayed based on the [Javascript API call]
+The __app_template__ element is a template container for each Parking Space being displayed. Hence, 5 parking spaces would have 5 app_template displayed based on the [Javascript API call](https://github.com/JosephAdewole/mawaqif_dashboard/blob/main/README.md#javascript-api-call)
