@@ -1,3 +1,5 @@
+# Mawaqif Dashboard
+
 This is the Module of this project which provides an interface for the Parking Space Management Company to monitor the Parking Lots.
 The Page which houses the User Interface is home.php.
 At every point in time, the current status of each parking space is kept updated with a number of information about the vehicle in it.
