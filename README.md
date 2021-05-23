@@ -15,6 +15,7 @@ Such information include:
    
  
  All of this Checks information is fetched from one of the endpoints of the API built for this project( https://mawaqif.herokuapp.com/api/checks ). This GET API call is made in assets/api2.js like this:
+ ## JavaScript API call
  
  ```
  function fetchdata(){
@@ -45,7 +46,7 @@ fetchdata();
 
 As shown above, some of the information obtained from the endpoint https://mawaqif.herokuapp.com/api/checks include 
 ### 1. is_empty
-   This gives information on whether the Parking Space is Occupied or Empty. Occupied or Empty is then displayed on home.php
+   This gives information on whether the Parking Space is Occupied or Empty. Occupied or Empty is then displayed on home.html
 ### 2. plate_number
    This gives the plate number of the vehicle detected present in the parking space. Its value is set to empty is there is no vehicle there at a given time.\
 ### 3. packing_space_id
@@ -57,3 +58,12 @@ As shown above, some of the information obtained from the endpoint https://mawaq
 
 Below is a sample response when a GET request is made to the (https://mawaqif.herokuapp.com/api/checks) API:
 
+
+
+##Below is how the data is displayed in home.html 
+```
+<div class="row" id="app_template">
+
+</div>
+```
+The __app_template__ element is a template container for each Parking Space being displayed. Hence, 5 parking spaces would have 5 app_template displayed based on the [Javascript API call]
