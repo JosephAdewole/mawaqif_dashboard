@@ -60,7 +60,7 @@ Below is a sample response when a GET request is made to the (https://mawaqif.he
 
 
 
-##Below is how the data is displayed in home.html 
+## Below is how the data is displayed in home.html 
 ```
 <div class="row" id="app_template">
 
