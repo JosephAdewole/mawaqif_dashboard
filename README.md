@@ -57,8 +57,26 @@ As shown above, some of the information obtained from the endpoint https://mawaq
 
 
 Below is a sample response when a GET request is made to the (https://mawaqif.herokuapp.com/api/checks) API:
-
-
+```
+{
+    "status": true,
+    "code": 200,
+    "data": [
+        {
+            "id": 184,
+            "plate_number": "67P-78PL",
+            "start_time": "2020-03-09T22:18:27Z",
+            "status": false
+        },
+        {
+            "id": 594,
+            "plate_number": "67P-908PL",
+            "start_time": "2021-05-17T18:18:27Z",
+            "status": false
+        }
+    ]
+}
+```
 
 ## Below is how the data is displayed in home.html 
 ```
