@@ -53,7 +53,7 @@ As shown above, some of the information obtained from the endpoint https://mawaq
    This piece of information identifies the exact parking space whose report is being displayed at    a given time. eg Parking Space "1"
 ### 4. created_at
    This shows the time at which the check was made. It also includes the date.
-###5. paid_or_unpaid???
+### 5. paid_or_unpaid???
 
 
 Below is a sample response when a GET request is made to the (https://mawaqif.herokuapp.com/api/checks) API:
