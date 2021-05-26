@@ -1,5 +1,6 @@
 function fetchdata(){
-    fetch("https://mawaqif.herokuapp.com/api/subscribers")
+    fetch("https://mawaqif.herokuapp.com/api/checks")
+//     fetch("https://mawaqif.herokuapp.com/api/subscribers")
     .then(response => {
         if(!response.ok){
             throw Error("ERROR");
